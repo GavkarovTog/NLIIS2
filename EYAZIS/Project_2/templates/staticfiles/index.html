@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/zeroing.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="block_input">
+                <input type="file" id="inputFile">
+            </div>
+            <div class="block_button">
+                <button type="button" id="buttonFile">Открыть файл</button>
+            </div>
+            <p id="textFile"></p>
+            <div class="instruction_block">
+                <img src="{% static 'img/question_circle_icon_246255.svg' %}" alt="">
+                <ol class="сategories_instruction">
+                    <li>Вы зашли в веб приложении где выполняется анализ текста.</li>
+                    <li>На странице веб-приложения вы увидите поле для выбора файла. Нажмите кнопку "Выбрать файл" и выберите файл с текстом, который вы хотите проанализировать.</li>
+                    <li>Нажмите кнопку "Открыть файл", чтобы загрузить текст из файла в приложение.</li>
+                    <li>Текст будет отображаться на экране. Наведите курсор мыши на любое предложение, чтобы выделить его белым цветом. Это показывает, что вы выбрали это предложение для анализа.</li>
+                    <li>Чтобы проанализировать выбранное предложение, щелкните по нему левой кнопкой мыши. Это откроет новую вкладку с результатами синтаксического разбора.</li>
+                    <li>На странице с результатами синтаксического разбора вы увидите структуру предложения и информацию о каждом его элементе.</li>
+                    <li>Для анализа другого предложения повторите шаги с 4 по 6.</li>
+                    <li>Чтобы выйти из приложения, закройте веб-браузер.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
